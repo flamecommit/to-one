@@ -1,7 +1,7 @@
 interface IProps {
-  easing?: string;
+  easing?: 'linear' | 'ease-in' | 'ease-out' | 'ease-in-out';
   duration: number;
-  partition: number;
+  partition: number; // duration값의 0.1배 이하로 입력해야 정상 동작. ex) diration: 1000, partition max: 250
   callback?: (value: number) => void;
 }
 
@@ -60,8 +60,8 @@ export default function zeroToOne({
     return d * duration;
   });
 
-  const sum = durations.reduce((a, b) => a + b);
-  console.log(durations, sum);
+  // const sum = durations.reduce((a, b) => a + b);
+  // console.log(durations, sum);
 
   const action = (step: number) => {
     setTimeout(() => {

@@ -7,7 +7,7 @@ function App() {
   useEffect(() => {
     zeroToOne({
       easing: 'ease-out',
-      duration: 1500,
+      duration: 1000,
       partition: 100,
       callback: (value) => {
         // console.log(value);
