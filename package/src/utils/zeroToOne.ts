@@ -1,7 +1,10 @@
 interface IProps {
   easing?: 'linear' | 'ease-in' | 'ease-out' | 'ease-in-out';
   duration: number;
-  partition: number; // duration값의 0.1배 이하로 입력해야 정상 동작. ex) diration: 1000, partition max: 250
+  /**
+   * duration의 10% 이하로 할당하세요.
+   */
+  partition: number;
   callback?: (value: number) => void;
 }
 
