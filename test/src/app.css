@@ -1,0 +1,56 @@
+.default-enter-active,
+.default-leave-active {
+  transition: all 5000ms;
+}
+
+.default-enter-from,
+.default-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+.custom-enter-active,
+.custom-leave-active {
+  transition: all 1000ms;
+}
+
+.custom-enter-from,
+.custom-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+.custom2-enter-active,
+.custom2-leave-active {
+  transition: all 1000ms;
+}
+
+.custom2-enter-from,
+.custom2-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+.delay-enter-active {
+  transition: all 1000ms 321ms;
+}
+.delay-leave-active {
+  transition: all 1000ms;
+}
+
+.delay-enter-from,
+.delay-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+.example {
+  width: 200px;
+  height: 200px;
+  background: burlywood;
+}
+.test {
+  width: 200px;
+  height: 200px;
+  background: skyblue;
+}

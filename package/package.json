@@ -1,0 +1,68 @@
+{
+  "name": "to-one",
+  "version": "1.0.1",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "source": "./src/index.tsx",
+  "types": "./dist/cjs/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "description": "from zero to one",
+  "keywords": [
+    "typescript",
+    "easing"
+  ],
+  "homepage": "https://shinyongjun.gitbook.io/to-one",
+  "bugs": {
+    "url": "https://github.com/flamecommit/to-one/issues",
+    "email": "shinyj1991@gmail.com"
+  },
+  "author": {
+    "name": "shinyongjun",
+    "email": "shinyj1991@gmail.com",
+    "url": "https://www.shinyongjun.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flamecommit/to-one.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "watch": "concurrently \"npm run clean\" \"npm run watch:esm\" \"npm run watch:cjs\"",
+    "watch:esm": "tsc --project tsconfig.json --outDir dist/esm --module esnext --watch",
+    "watch:cjs": "tsc --project tsconfig.json --outDir dist/cjs --module commonjs --watch",
+    "clean": "rm -rf dist"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@shinyongjun/eslint-config": "^0.0.3",
+    "@types/node": "^20.5.7",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "chokidar": "^3.5.3",
+    "concurrently": "^8.2.1",
+    "cpy-cli": "^5.0.0",
+    "eslint": "^8.48.0",
+    "fs-extra": "^11.1.1",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  }
+}
