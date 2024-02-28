@@ -35,14 +35,32 @@ zeroToOne({
 });
 ```
 
-<!-- ## API 문서
+## 주요 옵션
 
-라이브러리의 주요 API들에 대한 문서를 [Docs](https://shinyongjun.gitbook.io/react-transition/)에서 확인할 수 있습니다.
+### easing
+
+- type: 'linear' | 'ease-in' | 'ease-out' | 'ease-in-out'
+- 0부터 1까지 증가율 곡선을 제공합니다.
+
+### duration
+
+- type: number
+- 증가되는 시간을 설정합니다. 단위는 (ms) 입니다.
+
+### partition
+
+- type: number
+- partition 만큼 분할하여 증가합니다.
+
+### callback
+
+- type: (value: number) => void;
+- 분할마다 Callback 함수를 실행합니다.
 
 ## 실제 사용 사례
 
-라이브러리의 실제 사용 예시는 [Demo](https://shinyongjun.com/library/react-transition)에서 확인할 수 있습니다.
+라이브러리의 실제 사용 예시는 [Demo](https://shinyongjun.com/library/to-one)에서 확인할 수 있습니다.
 
 ## 피드백 및 지원
 
-라이브러리에 대한 피드백이나 문제 신고는 [GitHub Issues 페이지](https://github.com/flamecommit/react-transition/issues)에서 제공합니다. -->
+라이브러리에 대한 피드백이나 문제 신고는 [GitHub Issues 페이지](https://github.com/flamecommit/to-one/issues)에서 제공합니다.
